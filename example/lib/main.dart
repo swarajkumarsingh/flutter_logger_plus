@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_logger_plus/flutter_logger_plus.dart';
 
 void main() {
   runApp(const MyApp());
@@ -31,37 +32,51 @@ class HomeScreen extends StatelessWidget {
           child: Column(
             children: [
               ElevatedButton.icon(
-                onPressed: () {},
+                onPressed: () {
+                  logger.error("string");
+                },
                 icon: const Icon(Icons.ads_click_rounded, color: Colors.red),
                 label: const Text("RED"),
               ),
               ElevatedButton.icon(
-                onPressed: () {},
+                onPressed: () {
+                  logger.success("string");
+                },
                 icon: const Icon(Icons.ads_click_rounded, color: Colors.green),
                 label: const Text("GREEN"),
               ),
               ElevatedButton.icon(
-                onPressed: () {},
+                onPressed: () {
+                  logger.info("string");
+                },
                 icon: const Icon(Icons.ads_click_rounded, color: Colors.yellow),
                 label: const Text("YELLOW"),
               ),
               ElevatedButton.icon(
-                onPressed: () {},
+                onPressed: () {
+                  logger.blue("string");
+                },
                 icon: const Icon(Icons.ads_click_rounded, color: Colors.blue),
                 label: const Text("BLUE"),
               ),
               ElevatedButton.icon(
-                onPressed: () {},
+                onPressed: () {
+                  logger.pink("string");
+                },
                 icon: const Icon(Icons.ads_click_rounded, color: Colors.pink),
                 label: const Text("PINK"),
               ),
               ElevatedButton.icon(
-                onPressed: () {},
+                onPressed: () {
+                  logger.cyan("string");
+                },
                 icon: const Icon(Icons.ads_click_rounded, color: Colors.cyan),
                 label: const Text("CYAN"),
               ),
               ElevatedButton.icon(
-                onPressed: () {},
+                onPressed: () {
+                  logger.log("string");
+                },
                 icon: const Icon(Icons.ads_click_rounded, color: Colors.white),
                 label: const Text("WHITE"),
               ),
