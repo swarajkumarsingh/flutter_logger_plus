@@ -4,32 +4,32 @@ final logger = _FlutterLoggerPlus();
 
 @override
 class _FlutterLoggerPlus {
-  void error(String string) {
-    channel.error(string);
+  void error(dynamic string) {
+    channel.error(string.toString());
   }
 
-  void log(String string) {
-    channel.log(string);
+  void log(dynamic string) {
+    channel.log(string.toString());
   }
 
-  void success(String string) {
-    channel.success(string);
+  void success(dynamic string) {
+    channel.success(string.toString());
   }
 
-  void info(String string) {
-    channel.info(string);
+  void info(dynamic string) {
+    channel.info(string.toString());
   }
 
-  void blue(String string) {
-    channel.blue(string);
+  void blue(dynamic string) {
+    channel.blue(string.toString());
   }
 
-  void pink(String string) {
-    channel.pink(string);
+  void pink(dynamic string) {
+    channel.pink(string.toString());
   }
 
-  void cyan(String string) {
-    channel.cyan(string);
+  void cyan(dynamic string) {
+    channel.cyan(string.toString());
   }
 
   void clearLogs() {

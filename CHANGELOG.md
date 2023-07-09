@@ -7,3 +7,6 @@
 ## 2.0.0
 
 * Print Bug fixes
+## 2.0.1
+
+* Changed message type to dynamic, for easier use of logger package
