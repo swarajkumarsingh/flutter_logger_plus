@@ -13,3 +13,6 @@
 ## 3.0.0
 
 * Changed time location from center-right to center-left
+## 4.0.0
+
+* Removed package file location

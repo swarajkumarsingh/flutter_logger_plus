@@ -2,7 +2,6 @@
 
 import 'package:flutter_logger_plus/src/color_sequence.dart';
 import 'package:flutter_logger_plus/src/date.dart';
-import 'package:flutter_logger_plus/src/stack_trace.dart';
 
 import 'config.dart';
 
@@ -18,7 +17,7 @@ class _Channel {
 
     String hms = date.getHMS();
     string =
-        "${color.red}ERROR: ${color.boldBlue}TIME : $hms ${color.pink} | ${stackTrace.getLocation()} ${color.red}| MESSAGE: $string ${color.end}";
+        "${color.red}ERROR: ${color.boldBlue}TIME : $hms ${color.red}| MESSAGE: $string ${color.end}";
     print(string);
   }
 
@@ -29,7 +28,7 @@ class _Channel {
 
     String hms = date.getHMS();
     string =
-        "${color.green}SUCCESS: ${color.boldBlue}TIME : $hms ${color.pink} | ${stackTrace.getLocation()} ${color.green} | MESSAGE: $string ${color.end}";
+        "${color.green}SUCCESS: ${color.boldBlue}TIME : $hms ${color.green} | MESSAGE: $string ${color.end}";
     print(string);
   }
 
@@ -40,7 +39,7 @@ class _Channel {
 
     String hms = date.getHMS();
     string =
-        "${color.yellow}INFO: ${color.boldBlue}TIME : $hms ${color.pink} | ${stackTrace.getLocation()} ${color.yellow} | MESSAGE: $string ${color.end}";
+        "${color.yellow}INFO: ${color.boldBlue}TIME : $hms ${color.yellow} | MESSAGE: $string ${color.end}";
     print(string);
   }
 
