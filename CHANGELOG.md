@@ -10,3 +10,6 @@
 ## 2.0.1
 
 * Changed message type to dynamic, for easier use of logger package
+## 3.0.0
+
+* Changed time location from center-right to center-left

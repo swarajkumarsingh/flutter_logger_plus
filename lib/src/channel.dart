@@ -1,4 +1,3 @@
-
 // ignore_for_file: avoid_print
 
 import 'package:flutter_logger_plus/src/color_sequence.dart';
@@ -19,18 +18,7 @@ class _Channel {
 
     String hms = date.getHMS();
     string =
-        "${color.red}ERROR: ${color.pink}${stackTrace.getLocation()} ${color.red} | MESSAGE: $string | TIME : $hms ${color.end}";
-    print(string);
-  }
-
-  void log(String string, {showLog = false}) {
-    if (isInProduction) return;
-
-    if (showLog) logs.add(string);
-
-    String hms = date.getHMS();
-    string =
-        "${color.white}PRINT: ${color.pink}${stackTrace.getLocation()} ${color.white} | MESSAGE: $string | TIME : $hms ${color.end}";
+        "${color.red}ERROR: ${color.boldBlue}TIME : $hms ${color.pink} | ${stackTrace.getLocation()} ${color.red}| MESSAGE: $string ${color.end}";
     print(string);
   }
 
@@ -41,7 +29,7 @@ class _Channel {
 
     String hms = date.getHMS();
     string =
-        "${color.green}SUCCESS: ${color.pink}${stackTrace.getLocation()} ${color.green} | MESSAGE: $string | TIME : $hms ${color.end}";
+        "${color.green}SUCCESS: ${color.boldBlue}TIME : $hms ${color.pink} | ${stackTrace.getLocation()} ${color.green} | MESSAGE: $string ${color.end}";
     print(string);
   }
 
@@ -52,7 +40,18 @@ class _Channel {
 
     String hms = date.getHMS();
     string =
-        "${color.yellow}INFO: ${color.pink}${stackTrace.getLocation()} ${color.yellow} | MESSAGE: $string | TIME : $hms ${color.end}";
+        "${color.yellow}INFO: ${color.boldBlue}TIME : $hms ${color.pink} | ${stackTrace.getLocation()} ${color.yellow} | MESSAGE: $string ${color.end}";
+    print(string);
+  }
+
+  void log(String string, {showLog = false}) {
+    if (isInProduction) return;
+
+    if (showLog) logs.add(string);
+
+    String hms = date.getHMS();
+    string =
+        "${color.white}PRINT: ${color.boldBlue}TIME : $hms ${color.white} | MESSAGE: $string ${color.end}";
     print(string);
   }
 
@@ -63,7 +62,7 @@ class _Channel {
 
     String hms = date.getHMS();
     string =
-        "${color.blue}PRINT: ${color.pink}${stackTrace.getLocation()} ${color.blue} | MESSAGE: $string | TIME : $hms ${color.end}";
+        "${color.blue}PRINT: ${color.boldBlue}TIME : $hms ${color.blue} | MESSAGE: $string ${color.end}";
     print(string);
   }
 
@@ -74,7 +73,7 @@ class _Channel {
 
     String hms = date.getHMS();
     string =
-        "${color.pink}PRINT: ${color.blue}${stackTrace.getLocation()} ${color.pink} | MESSAGE: $string | TIME : $hms ${color.end}";
+        "${color.pink}PRINT: ${color.boldBlue}TIME : $hms ${color.pink} | MESSAGE: $string ${color.end}";
     print(string);
   }
 
@@ -85,7 +84,7 @@ class _Channel {
 
     String hms = date.getHMS();
     string =
-        "${color.cyan}PRINT: ${color.pink}${stackTrace.getLocation()} ${color.cyan} | MESSAGE: $string | TIME : $hms ${color.end}";
+        "${color.cyan}PRINT: ${color.boldBlue}TIME : $hms ${color.cyan} | MESSAGE: $string ${color.end}";
     log(string);
   }
 
