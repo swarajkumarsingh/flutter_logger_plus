@@ -1,4 +1,5 @@
-import 'dart:developer';
+
+// ignore_for_file: avoid_print
 
 import 'package:flutter_logger_plus/src/color_sequence.dart';
 import 'package:flutter_logger_plus/src/date.dart';
@@ -22,7 +23,7 @@ class _Channel {
     print(string);
   }
 
-  void print(String string, {showLog = false}) {
+  void log(String string, {showLog = false}) {
     if (isInProduction) return;
 
     if (showLog) logs.add(string);

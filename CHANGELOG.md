@@ -4,3 +4,6 @@
 ## 1.0.1
 
 * Color Bug fixed
+## 2.0.0
+
+* Print Bug fixes

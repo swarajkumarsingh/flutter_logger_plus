@@ -9,7 +9,7 @@ class _FlutterLoggerPlus {
   }
 
   void log(String string) {
-    channel.print(string);
+    channel.log(string);
   }
 
   void success(String string) {
@@ -25,11 +25,11 @@ class _FlutterLoggerPlus {
   }
 
   void pink(String string) {
-    channel.blue(string);
+    channel.pink(string);
   }
 
   void cyan(String string) {
-    channel.blue(string);
+    channel.cyan(string);
   }
 
   void clearLogs() {
