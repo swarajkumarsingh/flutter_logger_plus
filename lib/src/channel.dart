@@ -17,7 +17,7 @@ class _Channel {
 
     String hms = date.getHMS();
     string =
-        "${color.red}ERROR: ${color.pink}$hms ${color.red} | $string ${color.end}";
+        "${color.red}ERROR: ${color.pink}$hms${color.red} | $string ${color.end}";
     print(string);
   }
 
@@ -28,7 +28,7 @@ class _Channel {
 
     String hms = date.getHMS();
     string =
-        "${color.green}SUCCESS: ${color.pink}$hms ${color.green} | $string ${color.end}";
+        "${color.green}SUCCESS: ${color.pink}$hms${color.green} | $string ${color.end}";
     print(string);
   }
 
@@ -39,7 +39,7 @@ class _Channel {
 
     String hms = date.getHMS();
     string =
-        "${color.yellow}INFO: ${color.pink}$hms ${color.yellow} | $string ${color.end}";
+        "${color.yellow}INFO: ${color.pink}$hms${color.yellow} | $string ${color.end}";
     print(string);
   }
 
@@ -50,7 +50,7 @@ class _Channel {
 
     String hms = date.getHMS();
     string =
-        "${color.white}PRINT: ${color.boldBlue}$hms ${color.white} | $string ${color.end}";
+        "${color.white}PRINT: ${color.boldBlue}$hms${color.white} | $string ${color.end}";
     print(string);
   }
 
@@ -61,7 +61,7 @@ class _Channel {
 
     String hms = date.getHMS();
     string =
-        "${color.blue}PRINT: ${color.pink}$hms ${color.blue} | $string ${color.end}";
+        "${color.blue}PRINT: ${color.pink}$hms${color.blue} | $string ${color.end}";
     print(string);
   }
 
@@ -72,7 +72,7 @@ class _Channel {
 
     String hms = date.getHMS();
     string =
-        "${color.pink}PRINT: ${color.yellow}$hms ${color.pink} | $string ${color.end}";
+        "${color.pink}PRINT: ${color.yellow}$hms${color.pink} | $string ${color.end}";
     print(string);
   }
 
@@ -83,7 +83,7 @@ class _Channel {
 
     String hms = date.getHMS();
     string =
-        "${color.cyan}PRINT: ${color.boldBlue}$hms ${color.cyan} | $string ${color.end}";
+        "${color.cyan}PRINT: ${color.boldBlue}$hms${color.cyan} | $string ${color.end}";
     log(string);
   }
 

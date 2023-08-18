@@ -19,3 +19,6 @@
 ## 4.0.1
 
 * Added more efficient color schemes to the existing functions
+## 4.0.2
+
+* Fix extra space issue
