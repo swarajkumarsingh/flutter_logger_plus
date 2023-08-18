@@ -16,3 +16,6 @@
 ## 4.0.0
 
 * Removed package file location
+## 4.0.1
+
+* Added more efficient color schemes to the existing functions
