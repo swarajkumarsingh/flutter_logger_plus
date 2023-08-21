@@ -22,3 +22,6 @@
 ## 4.0.2
 
 * Fix extra space issue
+## 4.0.3
+
+* Added millisecond support

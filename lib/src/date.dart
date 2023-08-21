@@ -7,8 +7,9 @@ class _Date {
     int hour = now.hour;
     int minute = now.minute;
     int second = now.second;
+    int millisecond = now.millisecond;
     return semicolonFormat
-        ? "$hour:$minute:$second"
-        : "$hour/$minute/$second";
+        ? "$hour:$minute:$second:$millisecond"
+        : "$hour/$minute/$second/$millisecond";
   }
 }
