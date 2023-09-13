@@ -22,6 +22,7 @@
 ## 4.0.2
 
 * Fix extra space issue
-## 4.0.3
-
-* Added millisecond support
+## 5.0.0
+    * Added show millisecond support for more precise debugging
+    * Changed License
+    * Removed showLogs & clearLogs feature

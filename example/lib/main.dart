@@ -75,7 +75,7 @@ class HomeScreen extends StatelessWidget {
               ),
               ElevatedButton.icon(
                 onPressed: () {
-                  logger.log("string");
+                  logger.white("string");
                 },
                 icon: const Icon(Icons.ads_click_rounded, color: Colors.white),
                 label: const Text("WHITE"),

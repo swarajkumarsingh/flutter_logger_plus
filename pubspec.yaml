@@ -1,6 +1,6 @@
 name: flutter_logger_plus
 description: Customizable logger in flutter with pure dart code, with various color options, get insights like(where the print statement is called from and get time of the log), also view/delete old logs. 
-version: 4.0.3
+version: 5.0.0
 homepage: https://github.com/swarajkumarsingh/flutter_logger_plus
 
 environment:
@@ -10,7 +10,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  stack_trace: ^1.11.0
 
 dev_dependencies:
   flutter_test:

@@ -1,7 +1,6 @@
 import 'package:flutter/services.dart';
 
 final message = _Message();
-
 class _Message {
   String packageError = "URL_LAUNCHER_ERROR";
 
